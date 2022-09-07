@@ -120,6 +120,11 @@
           Status of the installation can be verified using Helm:
           $ helm status istiod -n istio-system
 
+
+### 16. Deploy 3-kiali-secret.yaml and verify.
+          kubectl apply -f ./3-kiali-secret.yaml
+          #validate: kiali secret should exist
+          kubectl get secrets -n istio-system | grep kiali
      
 
 
