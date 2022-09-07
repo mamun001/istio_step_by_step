@@ -94,9 +94,26 @@
 ### 13. Make sure clone worked.  You shoud see the files.
           cd istio-fleetman
           ls -l
+####    Confirm by seeing 4 files:
+          1-istio-init.yaml
+          2-istio-minikube.yaml 
+          3-kiali-secret.yaml
+          4-application-full-stack.yaml
+#
+
+#
 
 
-### 14. Create resources using 2-istio-minikube.yaml file
+### 14. You have cloned  Dick Chesterwood's repo. There are 4 yaml files. "run" the first yaml file and validate.
+          kubectl apply  -f ./1-istio-init.yaml
+####    Confirm by running:
+####      (istio-system namespace should exist)
+          kubectl get ns
+#
+
+#
+
+### 15. Create resources using 2-istio-minikube.yaml file
           kubectl apply -f ./2-istio-minikube.yaml
 ####    Confirm by:
           kubectl get svc -n istio-system
@@ -106,7 +123,7 @@
           kubectl get rs -n istio-system
           kubectl get deploy -n istio-system
 
-### 15. Install istio using helm chart
+### 16. Install istio using helm chart
 ####          This is directly from Istio web site:
 ####          https://istio.io/latest/docs/setup/install/helm/   
           Configure the Helm repository:
@@ -121,7 +138,7 @@
           $ helm status istiod -n istio-system
 
 
-### 16. Deploy 3-kiali-secret.yaml and verify.
+### 17. Deploy 3-kiali-secret.yaml and verify.
           kubectl apply -f ./3-kiali-secret.yaml
           #validate: kiali secret should exist
           kubectl get secrets -n istio-system | grep kiali
