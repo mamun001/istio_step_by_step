@@ -142,6 +142,21 @@
           kubectl apply -f ./3-kiali-secret.yaml
           #validate: kiali secret should exist
           kubectl get secrets -n istio-system | grep kiali
+#
+
+#
+
+### 18. Question:Deploy fleetman application (Dick Chesterwood Method) 
+          kubectl apply -f 4-application-full-stack.yaml
+####    Confirm by: 
+          #fleetman services should exist:
+          kubectl get svc -n istio-system | grep fleetman
+#
+
+#
+
+
+
      
 
 
