@@ -35,6 +35,10 @@
 
 ### 6. kubectl installed on your local Mac or Ubuntu Machine
 
+### 6. helm installed on your local Mac or Ubuntu Machine
+####     Confirm by:
+           helm version         
+
 #
 
 #
@@ -79,11 +83,42 @@
          kubectl config current-context
 
 
-###  12.. Clone the repo https://github.com/DickChesterwood/istio-fleetman
+### 12. Clone the repo https://github.com/DickChesterwood/istio-fleetman
 ###       This is Dick Chesterwood's repo. This will be the "app" that we will deploy on our cluster
 ###         So that , when we have Istio, we can see some traffic.
 ###         Alternatively, you can choose another application of your choice.
             git clone https://github.com/DickChesterwood/istio-fleetman
+
+
+
+### 13. Make sure clone worked.  You shoud see the files.
+          cd istio-fleetman
+          ls -l
+
+
+### 14. Create resources using 2-istio-minikube.yaml file
+          kubectl apply -f ./2-istio-minikube.yaml
+####    Confirm by:
+          kubectl get svc -n istio-system
+          kubectl get cm -n istio-system
+          kubectl get secrets -n istio-system
+          kubectl get pods -n istio-system
+          kubectl get rs -n istio-system
+          kubectl get deploy -n istio-system
+
+### 15. Install istio using helm chart
+####          This is directly from Istio web site:
+####          https://istio.io/latest/docs/setup/install/helm/   
+          Configure the Helm repository:
+            $ helm repo add istio https://istio-release.storage.googleapis.com/charts
+            $ helm repo update
+          Create a namespace istio-system for Istio components:
+            $ kubectl create namespace istio-system
+          Install the Istio discovery chart which deploys the istiod service:
+            $ helm install istiod istio/istiod -n istio-system --wait
+####    Confirm by:
+          Status of the installation can be verified using Helm:
+          $ helm status istiod -n istio-system
 
      
 
