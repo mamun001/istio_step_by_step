@@ -1,0 +1,5 @@
+
+1. Do deploy istio on an existing cluster, you first have to set a context. Use an opensource tool to list all the contexts you have authorization to:
+
+
+Ans:    kubectx

@@ -1,0 +1,4 @@
+
+3. clone the repo https://github.com/DickChesterwood/istio-fleetman
+
+Answer: git clone https://github.com/DickChesterwood/istio-fleetman

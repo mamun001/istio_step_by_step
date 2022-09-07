@@ -1,0 +1,38 @@
+
+006. How to install istio using helm chart?  (NOT dick chesterwood method, this is more official)
+
+Answer:
+
+   This is directly from Istio web site:
+     https://istio.io/latest/docs/setup/install/helm/    02.04.2022
+
+
+   Step 1:
+
+     Configure the Helm repository:
+
+     $ helm repo add istio https://istio-release.storage.googleapis.com/charts
+     $ helm repo update
+
+   Step 2:
+
+     Create a namespace istio-system for Istio components:
+
+     $ kubectl create namespace istio-system
+
+
+   Step 3:
+
+     Install the Istio discovery chart which deploys the istiod service:
+
+     $ helm install istiod istio/istiod -n istio-system --wait
+
+
+  Step 4:
+
+     Status of the installation can be verified using Helm:
+
+     $ helm status istiod -n istio-system
+
+
+

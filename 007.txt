@@ -1,0 +1,19 @@
+
+
+Question: (Dick Chesterwood Method): How to deploy 3-kiali-secret.yaml ? and Verify?
+
+
+Answer: 
+
+echo
+kubectl apply -f ./3-kiali-secret.yaml
+echo
+
+
+echo validate: kiali secret should exist
+echo
+kubectl get secrets -n istio-system | grep kiali
+echo
+
+
+

@@ -1,0 +1,9 @@
+
+
+istioctl install OR
+istioctl install --set profile=demo
+
+
+mine failed , but that's beacuse I had too small a VMs, need to try again.
+
+

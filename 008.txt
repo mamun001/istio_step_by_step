@@ -1,0 +1,23 @@
+
+Question:
+    How to deploy fleetman application (Dick Chesterwood Method) and verify?
+
+
+Answer:
+
+   echo _________________________________________________________________________________________
+   echo
+   echo THis is onkly for testing. Optional. In nonprod or prod, you MUST NOT DO THIS.
+   echo sandbox is fine
+   echo
+   kubectl apply -f 4-application-full-stack.yaml
+   echo
+
+
+
+   echo validate:
+   echo fleetman services should exist:
+   echo
+   sleep 2
+   kubectl get svc -n istio-system | grep fleetman
+

@@ -1,0 +1,21 @@
+
+
+Question: (Dick Chesterwood Method):  Once you have deployed Kiali pod, how do you get the pod's name?
+
+
+
+Answer:
+
+  echo _________________________________________________________________________________________
+  echo
+  echo getting kali pod name
+  echo
+  kubectl get pods -A | grep kiali | awk '{print $2}'
+  echo
+  echo
+  sleep 2
+  KALIPOD=`kubectl get pods -A | grep kiali | awk '{print $2}'`
+  echo KALIPOD=$KALIPOD
+  echo
+  echo
+
