@@ -183,15 +183,7 @@
 
 #
 
-
-
-
-
-
-     
-
-
-### 30. Destroy the Kubernetes cluster so that you stop incurring cost of running a small cluster.
+### 23. If you spinned a Kubernetes cluster only for this excercise, Destroy the Kubernetes cluster so that you stop incurring cost of running a small cluster.
           gcloud container clusters delete kubernetes_cluster_name --zone zone_where_the_cluster_is --project project_name_where_the_cluster_is
 
 
