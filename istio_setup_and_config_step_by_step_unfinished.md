@@ -146,7 +146,7 @@
 
 #
 
-### 18. Question:Deploy fleetman application (Dick Chesterwood Method) 
+### 18. Deploy Fleetman application (Dick Chesterwood Method) 
           kubectl apply -f 4-application-full-stack.yaml
 ####    Confirm by: 
           #fleetman services should exist:
@@ -154,6 +154,36 @@
 #
 
 #
+
+### 19. Once you have deployed Kiali pod, get the Kiali Pod Name:
+           kubectl get pods -A | grep kiali | awk '{print $2}'
+#
+
+#
+
+
+### 20. Once you have deployed kiali pod, find out which port is exposed? (Should be 20001)
+          kubectl describe pod pod_name_gotten_above  -n istio-system | grep -i port
+#
+
+#
+
+
+### 21. Kiali pod is exposing port 20001 which is the GUI. Port forward to it.
+         kubectl port-forward -n istio-system name_of_kiali_pod_gotten_above 20001:20001 &
+#
+
+#
+
+
+### 22.  Now on your can go to localhost:20001 to access the GUI.
+
+#
+
+#
+
+
+
 
 
 
