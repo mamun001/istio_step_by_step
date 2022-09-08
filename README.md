@@ -19,6 +19,7 @@
 ##
 ### istio_setup_and_config_step_by_step_unfinished.md : This is main file you want to read. It has step by step instructions and some explanations
 ### install_and_run_istio_ctl.md : How to install istioctl (CLI) and use it to get status of your service mesh
+### istioctl_analyze_command.md :  Example output of istioctl analyze command
 #
 
 #
