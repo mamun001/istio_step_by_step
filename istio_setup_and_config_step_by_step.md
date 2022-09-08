@@ -1,16 +1,16 @@
 
 #
 ## STEP BY STEP GUIDE FOR INSTALLING & SETTING ISTIO SERVICE MESH
-##      ..... ON KUBERNETES CLUSTER ......
+## ................. ON KUBERNETES CLUSTER ......................
 
 
-##    Use this step-up-step guide if you want to learn how to install istio service mesh 
-##    On a Kubernetes cluster so that you can get all the benefits of a service mesh.
+###    Use this step-up-step guide if you want to learn how to install istio service mesh 
+###    On a Kubernetes cluster so that you can get all the benefits of a service mesh.
 #
 
 
-##    By: Mamun Rashid
-###   Connect with me on Linkedin: https://www.linkedin.com/in/mamunrashid/
+###    By: Mamun Rashid
+### #   Connect with me on Linkedin: https://www.linkedin.com/in/mamunrashid/
 #
 
 #
