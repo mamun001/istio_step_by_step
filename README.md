@@ -1,6 +1,8 @@
 
+<p align="center">
 #
 ##     STEP BY STEP GUIDE FOR INSTALLING & SETTING ISTIO SERVICE MESH ON KUBERNETES CLUSTER
+</p>
 
 
 ##    Use this step-up-step guide if you want to learn how to install istio service mesh 
