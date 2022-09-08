@@ -1,9 +1,9 @@
 
-<p align="center">
-<h2> STEP BY STEP GUIDE FOR INSTALLING & SETTING ISTIO
-     SERVICE MESH ON KUBERNETES CLUSTER </h2>
-</p>
+## STEP BY STEP GUIDE FOR INSTALLING & SETTING ISTIO 
+## SERVICE MESH ON KUBERNETES CLUSTER 
+#
 
+#
 
 ##    Use this step-up-step guide if you want to learn how to install istio service mesh 
 ##    On a Kubernetes cluster so that you can get all the benefits of a service mesh.
