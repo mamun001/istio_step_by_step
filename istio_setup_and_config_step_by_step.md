@@ -85,10 +85,10 @@
 
 
 ### 12. Clone the repo https://github.com/DickChesterwood/istio-fleetman
-###       This is Dick Chesterwood's repo. This will be the "app" that we will deploy on our cluster
-###         So that , when we have Istio, we can see some traffic.
-###         Alternatively, you can choose another application of your choice.
-            git clone https://github.com/DickChesterwood/istio-fleetman
+#####          This is Dick Chesterwood's repo. This will be the "app" that we will deploy on our cluster
+#####          So that , when we have Istio, we can see some traffic.
+#####          Alternatively, you can choose another application of your choice.
+                  git clone https://github.com/DickChesterwood/istio-fleetman
 
 
 
