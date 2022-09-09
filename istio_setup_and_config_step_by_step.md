@@ -15,7 +15,7 @@
 
 #
 
-## Pre-requisites
+## ...............................Pre-requisites.......................................
 #
 
 #
@@ -45,7 +45,7 @@
 #
 
 
-## COST
+## .....................................COST...............................................
 #
 ### As of September 2022, a standard Kubernetes Cluster with 2 N2 Instances will cost $0.72/Hour (72 Cents/Hour)
 #
@@ -53,7 +53,7 @@
 #
 
 
-##  Steps:
+## .................................... Steps ...............................................
 #
 
 ### 7. Create vpc, subnet and k8s cluster
@@ -181,7 +181,7 @@
 
 #
 
-#
+##  ..........................................CLEANUP................................................
 
 ### 23. If you spinned a Kubernetes cluster only for this excercise, Destroy the Kubernetes cluster so that you stop incurring cost of running a small cluster.
           gcloud container clusters delete kubernetes_cluster_name --zone zone_where_the_cluster_is --project project_name_where_the_cluster_is
